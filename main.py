@@ -1,10 +1,10 @@
 #weightConvert.py
-weightStr=input("请输入重量")
+weightStr=input("请输入重量:")
 if weightStr[-2:] in ['kg']:
     pd=(eval(weightStr[0:-2]))*2.2046
-    print("对应的英制重量为{:.3f}pd".format(pd))
+    print("对应的英制重量为{:.3f}磅".format(pd))
 elif weightStr[-2:] in ['pd']:
     kg=(eval(weightStr[0:-2]))/2.2046
-    print("对应的公制重量为{:.3f}kg".format(kg))
+    print("对应的公制重量为{:.3f}公斤".format(kg))
 else:
     print("输入格式错误")
