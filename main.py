@@ -1,5 +1,5 @@
 #weightConvert.py
-weightStr=input("请输入重量:")
+weightStr=input()
 if weightStr[-2:] in ['kg']:
     pd=(eval(weightStr[0:-2]))*2.2046
     print("对应的英制重量为{:.3f}磅".format(pd))
